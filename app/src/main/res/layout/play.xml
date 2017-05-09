@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/playerbutton">
+
+
+    <Button
+        android:background="@drawable/laster2"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/btnlaster"
+        android:layout_weight="0.25"/>
+    <Button
+        android:background="@drawable/play2"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/btnlaster"
+        android:id="@+id/btnplay"
+        android:layout_weight="0.25"/>
+
+    <Button
+        android:background="@drawable/pause2"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+
+        android:layout_toRightOf="@id/btnplay"
+        android:id="@+id/btnpause"
+        android:layout_weight="0.25"
+        />
+    <Button
+        android:background="@drawable/stop2"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/btnpause"
+        android:id="@+id/btnstop"
+        android:layout_weight="0.25"/>
+    <Button
+        android:background="@drawable/next2"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/btnnext"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/btnstop"
+
+        android:layout_weight="0.25"/>
+    <SeekBar
+        android:id="@+id/process_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btnpause"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
